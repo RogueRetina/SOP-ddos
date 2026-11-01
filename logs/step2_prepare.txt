@@ -1,0 +1,41 @@
+start rows        : 225,745
+dropped inf/NaN   : 34
+dropped duplicates: 2,629
+final rows        : 223,082
+
+features kept: 21
+  Destination Port           in the first packet header
+  Init_Win_bytes_forward     TCP window in the SYN (first packet)
+  Init_Win_bytes_backward    TCP window in the SYN-ACK (second packet)
+  min_seg_size_forward       from first packet's TCP header
+  Fwd Packet Length Max      running max over fwd packets
+  Fwd Packet Length Min      running min over fwd packets
+  Fwd Packet Length Mean     running sum / count over fwd packets
+  Bwd Packet Length Max      running max over bwd packets
+  Bwd Packet Length Min      running min over bwd packets
+  Bwd Packet Length Mean     running sum / count over bwd packets
+  Min Packet Length          running min over all packets
+  Max Packet Length          running max over all packets
+  SYN Flag Count             counter on the SYN flag
+  ACK Flag Count             counter on the ACK flag
+  RST Flag Count             counter on the RST flag
+  PSH Flag Count             counter on the PSH flag
+  FIN Flag Count             counter on the FIN flag
+  URG Flag Count             counter on the URG flag
+  Flow IAT Min               running min of gap between packets
+  Flow IAT Max               running max of gap between packets
+  Flow IAT Mean              running mean of gap between packets
+
+label balance (1 = attack):
+  1: 128,014 (57.38%)
+  0: 95,068 (42.62%)
+
+attack share by destination port (top 8 by flow count):
+  port    80: 136,557 flows,  93.7% attack
+  port    53:  30,302 flows,   0.0% attack
+  port   443:  13,112 flows,   0.0% attack
+  port  8080:     510 flows,   0.0% attack
+  port   123:     361 flows,   0.0% attack
+  port    22:     317 flows,   0.0% attack
+  port   389:     257 flows,   0.0% attack
+  port    88:     170 flows,   0.0% attack
