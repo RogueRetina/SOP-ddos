@@ -1,0 +1,13 @@
+|--- Fwd Packet Length Max <= 21.00
+|   |--- URG Flag Count <= 0.50
+|   |   |--- Flow IAT Max <= 7705.50
+|   |   |   |--- class: 0
+|   |   |--- Flow IAT Max >  7705.50
+|   |   |   |--- class: 1
+|   |--- URG Flag Count >  0.50
+|   |   |--- Flow IAT Mean <= 791267.69
+|   |   |   |--- class: 0
+|   |   |--- Flow IAT Mean >  791267.69
+|   |   |   |--- class: 0
+|--- Fwd Packet Length Max >  21.00
+|   |--- class: 0

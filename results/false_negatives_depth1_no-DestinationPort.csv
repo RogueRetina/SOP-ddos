@@ -1,0 +1,1 @@
+Init_Win_bytes_forward,Init_Win_bytes_backward,min_seg_size_forward,Fwd Packet Length Max,Fwd Packet Length Min,Fwd Packet Length Mean,Bwd Packet Length Max,Bwd Packet Length Min,Bwd Packet Length Mean,Min Packet Length,Max Packet Length,SYN Flag Count,ACK Flag Count,RST Flag Count,PSH Flag Count,FIN Flag Count,URG Flag Count,Flow IAT Min,Flow IAT Max,Flow IAT Mean,y,pred

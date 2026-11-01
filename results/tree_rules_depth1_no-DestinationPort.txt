@@ -1,0 +1,4 @@
+|--- Fwd Packet Length Max <= 21.00
+|   |--- class: 1
+|--- Fwd Packet Length Max >  21.00
+|   |--- class: 0
