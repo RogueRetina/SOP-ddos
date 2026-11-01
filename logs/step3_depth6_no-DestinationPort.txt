@@ -1,0 +1,24 @@
+run tag      : depth6_no-DestinationPort
+seed         : 52
+features (20): dropped = ['Destination Port']
+train / test : 156,157 / 66,925
+
+--- test-set results (attack = positive) ---
+precision : 0.9997   (of flagged flows, how many were real attacks)
+recall    : 0.9988   (of real attacks, how many we caught)
+f1        : 0.9993
+accuracy  : 0.9991   (for reference only)
+TN=28,509  FP=12  FN=45  TP=38,359
+
+--- top 8 feature importances ---
+  Fwd Packet Length Max      0.579
+  URG Flag Count             0.274
+  Flow IAT Max               0.080
+  Fwd Packet Length Mean     0.039
+  Flow IAT Min               0.022
+  Bwd Packet Length Mean     0.003
+  Init_Win_bytes_forward     0.002
+  Init_Win_bytes_backward    0.000
+
+--- errors by destination port (only if port was a feature) ---
+(port not used; inspect false negatives manually, see results file)

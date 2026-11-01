@@ -1,0 +1,46 @@
+|--- Fwd Packet Length Max <= 21.00
+|   |--- Destination Port <= 84.00
+|   |   |--- Fwd Packet Length Mean <= 4.25
+|   |   |   |--- Flow IAT Mean <= 2501991.75
+|   |   |   |   |--- Max Packet Length <= 1222.50
+|   |   |   |   |   |--- Init_Win_bytes_forward <= 256.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Init_Win_bytes_forward >  256.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Max Packet Length >  1222.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- Flow IAT Mean >  2501991.75
+|   |   |   |   |--- Fwd Packet Length Max <= 3.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Fwd Packet Length Max >  3.00
+|   |   |   |   |   |--- class: 1
+|   |   |--- Fwd Packet Length Mean >  4.25
+|   |   |   |--- Flow IAT Min <= 1230.00
+|   |   |   |   |--- Flow IAT Max <= 696.00
+|   |   |   |   |   |--- Bwd Packet Length Mean <= 690.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Bwd Packet Length Mean >  690.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Flow IAT Max >  696.00
+|   |   |   |   |   |--- Init_Win_bytes_backward <= 245.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Init_Win_bytes_backward >  245.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Flow IAT Min >  1230.00
+|   |   |   |   |--- Init_Win_bytes_forward <= 118.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Init_Win_bytes_forward >  118.50
+|   |   |   |   |   |--- Flow IAT Max <= 779462.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Flow IAT Max >  779462.00
+|   |   |   |   |   |   |--- class: 0
+|   |--- Destination Port >  84.00
+|   |   |--- Destination Port <= 27655.50
+|   |   |   |--- Destination Port <= 27635.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Destination Port >  27635.50
+|   |   |   |   |--- class: 1
+|   |   |--- Destination Port >  27655.50
+|   |   |   |--- class: 0
+|--- Fwd Packet Length Max >  21.00
+|   |--- class: 0

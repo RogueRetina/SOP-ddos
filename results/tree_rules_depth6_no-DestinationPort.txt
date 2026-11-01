@@ -1,0 +1,52 @@
+|--- Fwd Packet Length Max <= 21.00
+|   |--- URG Flag Count <= 0.50
+|   |   |--- Flow IAT Max <= 7705.50
+|   |   |   |--- Bwd Packet Length Mean <= 1205.25
+|   |   |   |   |--- Bwd Packet Length Min <= 5.00
+|   |   |   |   |   |--- FIN Flag Count <= 0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- FIN Flag Count >  0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Bwd Packet Length Min >  5.00
+|   |   |   |   |   |--- Init_Win_bytes_backward <= 237.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Init_Win_bytes_backward >  237.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Bwd Packet Length Mean >  1205.25
+|   |   |   |   |--- Fwd Packet Length Mean <= 5.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Fwd Packet Length Mean >  5.00
+|   |   |   |   |   |--- class: 1
+|   |   |--- Flow IAT Max >  7705.50
+|   |   |   |--- Fwd Packet Length Mean <= 5.57
+|   |   |   |   |--- Fwd Packet Length Mean <= 4.25
+|   |   |   |   |   |--- Init_Win_bytes_forward <= 260.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Init_Win_bytes_forward >  260.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Fwd Packet Length Mean >  4.25
+|   |   |   |   |   |--- Init_Win_bytes_backward <= 1023.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Init_Win_bytes_backward >  1023.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Fwd Packet Length Mean >  5.57
+|   |   |   |   |--- Flow IAT Min <= 6540.50
+|   |   |   |   |   |--- Init_Win_bytes_forward <= 255.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Init_Win_bytes_forward >  255.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Flow IAT Min >  6540.50
+|   |   |   |   |   |--- Flow IAT Min <= 1607337.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Flow IAT Min >  1607337.50
+|   |   |   |   |   |   |--- class: 0
+|   |--- URG Flag Count >  0.50
+|   |   |--- Flow IAT Mean <= 791267.69
+|   |   |   |--- class: 0
+|   |   |--- Flow IAT Mean >  791267.69
+|   |   |   |--- Flow IAT Mean <= 791284.78
+|   |   |   |   |--- class: 1
+|   |   |   |--- Flow IAT Mean >  791284.78
+|   |   |   |   |--- class: 0
+|--- Fwd Packet Length Max >  21.00
+|   |--- class: 0

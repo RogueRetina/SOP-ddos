@@ -1,0 +1,27 @@
+run tag      : depth6_all
+seed         : 52
+features (21): dropped = none
+train / test : 156,157 / 66,925
+
+--- test-set results (attack = positive) ---
+precision : 0.9999   (of flagged flows, how many were real attacks)
+recall    : 0.9990   (of real attacks, how many we caught)
+f1        : 0.9994
+accuracy  : 0.9993   (for reference only)
+TN=28,517  FP=4  FN=40  TP=38,364
+
+--- top 8 feature importances ---
+  Fwd Packet Length Max      0.578
+  Destination Port           0.347
+  Fwd Packet Length Mean     0.048
+  Flow IAT Min               0.016
+  Flow IAT Max               0.009
+  Bwd Packet Length Mean     0.001
+  Init_Win_bytes_forward     0.000
+  Init_Win_bytes_backward    0.000
+
+--- errors by destination port (only if port was a feature) ---
+false positives (benign flagged as attack): 4
+  top ports: {80: 4}
+false negatives (attack missed): 40
+  top ports: {80: 38, 64873: 1, 64869: 1}
