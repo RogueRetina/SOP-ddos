@@ -1,0 +1,28 @@
+=== PART 1: key features by class (all cleaned flows) ===
+
+URG Flag Count: share of flows with each value
+Label           attack  benign
+URG Flag Count                
+0                  1.0  0.6666
+1                  0.0  0.3334
+
+Fwd Packet Length Max: quantiles
+        0.1   0.5     0.9
+Label                    
+attack  6.0  20.0    20.0
+benign  6.0  42.0  5840.0
+
+=== PART 2: the missed attacks (depth 6, all features, test set) ===
+missed attacks: 40   caught attacks: 38,364   benign flows on port 80: 2,580
+ports of missed attacks: {80: 38, 64873: 1, 64869: 1}
+
+median feature values (top-8 features by importance):
+                         missed attacks  caught attacks  benign port 80
+Fwd Packet Length Max               6.0            20.0          298.00
+Destination Port                   80.0            80.0           80.00
+Fwd Packet Length Mean              6.0             7.0           22.75
+Flow IAT Min                     1995.0             4.0           50.00
+Flow IAT Max                  3262864.5       1878540.5       244270.00
+Bwd Packet Length Mean              0.0          1934.5           31.10
+Init_Win_bytes_forward            256.0           256.0         8192.00
+Init_Win_bytes_backward            -1.0           229.0          235.00
