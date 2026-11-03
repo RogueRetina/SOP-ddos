@@ -1,0 +1,38 @@
+=== depth-3 tree on the 4 early features (flows with <= 10 packets) ===
+|--- Init_Win_bytes_forward <= 255.50
+|   |--- Init_Win_bytes_forward <= 250.50
+|   |   |--- Destination Port <= 64866.00
+|   |   |   |--- class: 0
+|   |   |--- Destination Port >  64866.00
+|   |   |   |--- class: 0
+|   |--- Init_Win_bytes_forward >  250.50
+|   |   |--- Init_Win_bytes_forward <= 251.50
+|   |   |   |--- class: 0
+|   |   |--- Init_Win_bytes_forward >  251.50
+|   |   |   |--- class: 0
+|--- Init_Win_bytes_forward >  255.50
+|   |--- Destination Port <= 84.00
+|   |   |--- Init_Win_bytes_backward <= 230.00
+|   |   |   |--- class: 1
+|   |   |--- Init_Win_bytes_backward >  230.00
+|   |   |   |--- class: 0
+|   |--- Destination Port >  84.00
+|   |   |--- class: 0
+
+importances: {'Destination Port': np.float64(0.276), 'Init_Win_bytes_forward': np.float64(0.661), 'Init_Win_bytes_backward': np.float64(0.062), 'min_seg_size_forward': np.float64(0.0)}
+
+top values of Init_Win_bytes_backward per class:
+Label   Init_Win_bytes_backward
+BENIGN  -1                         38915
+         0                         18467
+         256                        6183
+DDoS     229                       58253
+        -1                         46524
+         0                             3
+
+top values of min_seg_size_forward per class:
+Label   min_seg_size_forward
+BENIGN  20                       51613
+        32                       19267
+        40                        2094
+DDoS    20                      104780
