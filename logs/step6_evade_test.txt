@@ -1,0 +1,8 @@
+recall on 31,434 test attack flows after changing Init_Win_bytes_forward (depth 6, flows <= 10 packets)
+window value              early4     all21
+unchanged                 0.9998    0.9997
+229                       0.0000    0.9997
+1024                      1.0000    0.9997
+8192 (Windows-like)       1.0000    0.9997
+29200 (Linux-like)        1.0000    0.9997
+64240 (modern Linux)      0.0000    0.9997
