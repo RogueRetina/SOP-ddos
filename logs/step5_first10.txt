@@ -1,0 +1,23 @@
+=== how many packets do flows have? ===
+           count  mean   std  min  50%   90%    99%     max
+y                                                          
+benign   95068.0  11.9  56.5  2.0  6.0  17.0  103.0  4813.0
+attack  128014.0   7.7   3.2  2.0  8.0  13.0   15.0    18.0
+
+share of flows with at most k packets (benign / attack):
+  k=3    benign  23.6%   attack   0.2%
+  k=5    benign  46.8%   attack  35.5%
+  k=10   benign  77.5%   attack  81.9%
+  k=20   benign  91.9%   attack 100.0%
+  k=50   benign  97.3%   attack 100.0%
+
+=== subset: flows with at most 10 packets ===
+flows kept: 178,430 of 223,082 (80.0%)
+benign: 73,650   attack: 104,780
+
+=== results on the held-out test split (seed 52, depth 6) ===
+feature set     precision   recall      f1   TN / FP / FN / TP
+early4             0.9912   0.9998  0.9955   21,815 / 280 / 6 / 31,428
+early4_noport      0.9933   0.9996  0.9964   21,883 / 212 / 14 / 31,420
+all21              0.9945   0.9997  0.9971   21,921 / 174 / 11 / 31,423
+all21_noport       0.9991   0.9988  0.9990   22,067 / 28 / 38 / 31,396
